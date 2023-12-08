@@ -8,7 +8,6 @@ export default function Carroussel(props) {
       ...element,
       onClick: () => {
         setGoToSlide(index);
-        setCurIndex(index);
       },
     };
   });
@@ -16,7 +15,6 @@ export default function Carroussel(props) {
   const [offsetRadius, setOffsetRadius] = useState(4);
   const [showArrows, setShowArrows] = useState(false);
   const [goToSlide, setGoToSlide] = useState(null);
-  const [curIndex, setCurIndex] = useState(0);
   const [cards] = useState(table);
 
   useEffect(() => {

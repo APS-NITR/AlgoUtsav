@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.back {
+    background-image: url("./assets/Bgimagefull.png");
+    min-height: 3500px;
+}

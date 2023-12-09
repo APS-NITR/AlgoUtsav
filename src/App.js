@@ -1,20 +1,30 @@
 import React from "react";
-import Header from "./Components/Header";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Sponsor from "./Components/Sponsor";
-import Footer from "./Components/Footer";
 import "./App.css";
+import RootLayout from "./Components/Layout/RootLayout";
+import {
+  createBrowserRouter, 
+  createRoutesFromElements,
+  Route, 
+  RouterProvider
+} from 'react-router-dom';
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="sponsor" element={<Sponsor />} />
+    </Route>
+  )
+)
 
 const App = () => {
   return (
-    <div className="back bg-cover bg-scroll bg-no-repeat">
-      <Header />
-      <Home />
-      <About />
-      <Sponsor /> 
-      <Footer />
-    </div>
+    <RouterProvider router={router} />
   );
 };
 

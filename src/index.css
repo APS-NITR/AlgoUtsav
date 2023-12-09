@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "pusab";
+  src: url("../public/fonts/bit-pusab.ttf") format("truetype");
+}

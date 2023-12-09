@@ -5,6 +5,7 @@ import BNYLogo from "../Images/BNYLogo.jpg";
 import LiciousLogo from "../Images/LiciousLogo.webp";
 import SponsorCard from "./SponsorCard";
 import uuid4 from "uuid4";
+import SponsorHead from "../Images/Sponsors.png";
 import "../Styles/Sponsors.css";
 
 export default function Sponsor() {
@@ -68,13 +69,14 @@ export default function Sponsor() {
   ];
 
   return (
-    <div style={{ textAlign: "center", justifyContent: "center" }}>
-      <h1
-        id="sponsor-head"
-        class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-text-gr-1 to-text-gr-2 mb-8"
-      >
-        SPONSORS
-      </h1>
+    <div style={{padding: 4}}>
+      <div style={{display: "flex", justifyContent: "center", width: "100%", alignItems: "center" }}>
+        <img
+          src={SponsorHead}
+          alt="sponsor_heading"
+          style={{ maxWidth: "582px", maxHeight: "58px" }}
+        />
+      </div>
       <Carroussel
         showArrows={false}
         cards={cards}

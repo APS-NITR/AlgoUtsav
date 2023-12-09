@@ -89,7 +89,7 @@ export default function Sponsor() {
         showArrows={false}
         cards={cards}
         height="500px"
-        width="90%"
+        width="90vw"
         margin="auto"
         offset={4}
       />

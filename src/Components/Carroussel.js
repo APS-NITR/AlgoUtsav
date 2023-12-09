@@ -4,13 +4,23 @@ import { config } from "react-spring";
 
 export default function Carroussel(props) {
   const table = props.cards.map((element, index) => {
-    return { ...element, onClick: () => setGoToSlide(index) };
+    return {
+      ...element,
+      onClick: () => {
+        setGoToSlide(index);
+      },
+    };
   });
 
-  const [offsetRadius, setOffsetRadius] = useState(2);
+  const [offsetRadius, setOffsetRadius] = useState(4);
   const [showArrows, setShowArrows] = useState(false);
   const [goToSlide, setGoToSlide] = useState(null);
   const [cards] = useState(table);
+
+  useEffect(() => {
+    const repeat = setInterval(() => {setGoToSlide(goToSlide+1)}, 5000);
+    return () => clearInterval(repeat);
+  }, [goToSlide]);
 
   useEffect(() => {
     setOffsetRadius(props.offset);

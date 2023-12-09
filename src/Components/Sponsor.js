@@ -69,8 +69,8 @@ export default function Sponsor() {
   ];
 
   return (
-    <div style={{padding: 4}}>
-      <div className="p-8" style={{display: "flex", justifyContent: "center", width: "100%", alignItems: "center" }}>
+    <div className="back bg-cover bg-fixed bg-no-repeat" style={{ padding: 4 }}>
+      <div style={{ display: "flex", justifyContent: "center", width: "100%", alignItems: "center" }}>
         <img
           src={SponsorHead}
           alt="sponsor_heading"

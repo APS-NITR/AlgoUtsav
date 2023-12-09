@@ -1,4 +1,5 @@
 import React from "react";
+import "../index.css"
 
 const SponsorCard = (props) => {
   return (
@@ -12,7 +13,7 @@ const SponsorCard = (props) => {
         src={props.image}
         alt={props.title}
       />
-      <h1 className="text-2xl mt-8 mb-10 font-semibold text-yellow-300">{props.title}</h1>
+      <h1 className="text-lg mt-8 mb-10 text-yellow-300 font-pusab">{props.title}</h1>
     </div>
   );
 };

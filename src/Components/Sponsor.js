@@ -70,11 +70,11 @@ export default function Sponsor() {
 
   return (
     <div style={{padding: 4}}>
-      <div style={{display: "flex", justifyContent: "center", width: "100%", alignItems: "center" }}>
+      <div className="p-8" style={{display: "flex", justifyContent: "center", width: "100%", alignItems: "center" }}>
         <img
           src={SponsorHead}
           alt="sponsor_heading"
-          style={{ maxWidth: "582px", maxHeight: "58px" }}
+          style={{ maxWidth: "100%", maxHeight: "58px" }}
         />
       </div>
       <Carroussel
@@ -82,7 +82,7 @@ export default function Sponsor() {
         cards={cards}
         height="500px"
         width="90%"
-        margin="0 auto"
+        margin="auto"
         offset={4}
       />
     </div>

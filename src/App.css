@@ -1,8 +1,8 @@
-
 .back {
     background-image: url("./assets/HomePage.png");
-    min-height: 100vh;
+    min-height: 90vh;
 }
+
 @font-face {
     font-family: "pusab";
     src: url("../public/fonts/bit-pusab.ttf") format("truetype");

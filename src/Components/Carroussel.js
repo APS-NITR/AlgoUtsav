@@ -21,7 +21,13 @@ export default function Carroussel(props) {
   for (let i = 0; i < table.length; i++) {
     mark_table.push({
       key: uuid4(),
-      content: <img src={Ellipse} alt="circle" />,
+      content: (
+        <img
+          src={Ellipse}
+          alt="circle"
+          style={{ minHeight: 27, minWidth: 27, maxHeight: 27, maxWidth: 27 }}
+        />
+      ),
     });
   }
 
@@ -44,7 +50,7 @@ export default function Carroussel(props) {
   }, [props.offset, props.showArrows]);
 
   return (
-    <div className="px-8">
+    <div className="px-8" style={{overflow: "clip"}}>
       <div style={{ display: "flex" }}>
         <button
           onClick={() => {
@@ -76,7 +82,7 @@ export default function Carroussel(props) {
           <img src={RightArrow} alt="left_arrow" />
         </button>
       </div>
-      <div style={{ width: "10%", height: "27px", margin: props.margin }}>
+      <div style={{ width: "15vw", height: "27px", margin: "0 auto" }}>
         <Carousel
           slides={circles}
           goToSlide={goToSlide}

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div className="back bg-cover bg-scroll bg-no-repeat">
+    <div className="back bg-cover bg-fixed bg-no-repeat">
       <div style={{ textAlign: "center", justifyContent: "center" }}>
         <h1
           id="home-head"

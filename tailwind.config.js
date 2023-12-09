@@ -8,6 +8,9 @@ module.exports = {
         "text-gr-1": "#FCCF31",
         "text-gr-2": "#FF0000",
       },
+      fontFamily: {
+        pusab: ["pusab", "cursive"],
+      },
     },
   },
   variants: {

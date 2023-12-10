@@ -23,9 +23,10 @@ export default function Carroussel(props) {
       key: uuid4(),
       content: (
         <img
+          className="h-5 w-5 max-w-[20px] min-w-[20px] sm:h-7 sm:w-7 sm:max-w-[28px] sm:min-w-[28px]"
           src={Ellipse}
           alt="circle"
-          style={{ minHeight: 27, minWidth: 27, maxHeight: 27, maxWidth: 27 }}
+          // style={{ minHeight: 27, minWidth: 27, maxHeight: 27, maxWidth: 27 }}
         />
       ),
     });
@@ -50,19 +51,24 @@ export default function Carroussel(props) {
   }, [props.offset, props.showArrows]);
 
   return (
-    <div className="px-8" style={{overflow: "clip"}}>
+    <div className="px-1 sm:px-4 lg:px-8" style={{ overflow: "clip" }}>
       <div style={{ display: "flex" }}>
         <button
           onClick={() => {
             setGoToSlide(goToSlide - 1);
           }}
         >
-          <img src={LeftArrow} alt="left_arrow" />
+          <img
+          className="w-6 sm:w-7"
+            src={LeftArrow}
+            alt="left_arrow"
+            style={{ zIndex: 5, position: "relative" }}
+          />
         </button>
         <div
+          className="h-[400px] sm:h-[420px]"
           style={{
             width: props.width,
-            height: props.height,
             margin: props.margin,
           }}
         >
@@ -79,10 +85,13 @@ export default function Carroussel(props) {
             setGoToSlide(goToSlide + 1);
           }}
         >
-          <img src={RightArrow} alt="left_arrow" />
+          <img className="w-6 sm:w-7" src={RightArrow} alt="left_arrow" style={{ zIndex: 5, position: "relative" }}/>
         </button>
       </div>
-      <div style={{ width: "15vw", height: "27px", margin: "0 auto" }}>
+      <div
+        className="h-5 sm:h-7"
+        style={{ width: "15vw", height: "28px", margin: "0 auto" }}
+      >
         <Carousel
           slides={circles}
           goToSlide={goToSlide}

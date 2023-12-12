@@ -1,8 +1,0 @@
-@import url("https://fonts.cdnfonts.com/css/karmatic-arcade");
-
-#sponsor-head {
-  font-family: "Karmatic Arcade", sans-serif;
-  background: -webkit-linear-gradient(#fccf31, #ff0000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}

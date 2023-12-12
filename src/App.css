@@ -1,5 +1,10 @@
 .back {
-  background-image: url("./assets/Bgimagefull.png");
-  min-height: 3000px;
+  background: linear-gradient(156deg, #380744 13.94%, #010C1B 41.04%, #380744 62%, #010C1B 88.45%);
+  background-image: url("./assets/HomePage.png");
+  background-size: cover;
+  min-height: 100vh;
 }
 
+.curs{
+  cursor: pointer;
+}

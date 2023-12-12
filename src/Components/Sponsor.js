@@ -71,7 +71,6 @@ export default function Sponsor() {
   return (
     <div className="back bg-cover bg-fixed bg-no-repeat" style={{ padding: 4 }}>
       <div
-        className="p-8"
         style={{
           display: "flex",
           justifyContent: "center",

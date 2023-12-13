@@ -71,6 +71,7 @@ export default function Sponsor() {
   return (
     <div className="back bg-cover bg-fixed bg-no-repeat" style={{ padding: 4 }}>
       <div
+        className="p-8 my-4 sm:my-8"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -87,7 +88,7 @@ export default function Sponsor() {
       <Carroussel
         showArrows={false}
         cards={cards}
-        height="500px"
+        height="420px"
         width="90vw"
         margin="auto"
         offset={4}

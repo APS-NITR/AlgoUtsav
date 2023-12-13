@@ -1,16 +1,21 @@
 import React from 'react'
+import about from '../Images/Aboutus.png';
 
 export default function About() {
   return (
-    <div style={{ textAlign: "center", justifyContent: "center" }}>
-      <h1
-        id="about-head"
-        class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-text-gr-1 to-text-gr-2"
-        style={{ marginBottom: 100 }}
-      >
-        ABOUT US
-      </h1>
-
+    <div>
+      <div style={{display: "flex", justifyContent: "center", width: "100%", alignItems: "center" }}>
+        <img
+          src={about}
+          alt="sponsor_heading"
+          style={{ maxWidth: "582px", maxHeight: "58px" }}
+        />
+      </div>
+      <div className='flex justify-evenly border-2 border-white '>
+        <div className='text-white border-2 border-white'>HeLLO</div>
+        <div className='text-white border-2 border-white'>HIII</div>
+      </div>
     </div>
+    
   )
 }

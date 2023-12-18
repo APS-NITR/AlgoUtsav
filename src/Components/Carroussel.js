@@ -1,9 +1,9 @@
 import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { config } from "react-spring";
-import Ellipse from "../Images/Ellipse.png";
-import LeftArrow from "../Images/LeftArrow.png";
-import RightArrow from "../Images/RightArrow.png";
+import Ellipse from "../assets/Images/Ellipse.png";
+import LeftArrow from "../assets/Images/LeftArrow.png";
+import RightArrow from "../assets/Images/RightArrow.png";
 import uuid4 from "uuid4";
 
 export default function Carroussel(props) {

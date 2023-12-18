@@ -1,11 +1,11 @@
 import React from "react";
 import Carroussel from "./Carroussel";
-import OracleLogo from "../Images/OracleLogo.png";
-import BNYLogo from "../Images/BNYLogo.jpg";
-import LiciousLogo from "../Images/LiciousLogo.webp";
+import OracleLogo from "../assets/Images/OracleLogo.png";
+import BNYLogo from "../assets/Images/BNYLogo.jpg";
+import LiciousLogo from "../assets/Images/LiciousLogo.webp";
 import SponsorCard from "./SponsorCard";
 import uuid4 from "uuid4";
-import SponsorHead from "../Images/Sponsors.png";
+import SponsorHead from "../assets/Images/Sponsors.png";
 import "../Styles/Sponsors.css";
 
 export default function Sponsor() {
@@ -69,9 +69,9 @@ export default function Sponsor() {
   ];
 
   return (
-    <div className="back bg-cover bg-fixed bg-no-repeat" style={{ padding: 4 }}>
+    <div className="bg-cover bg-fixed bg-no-repeat" style={{ padding: 4 }}>
       <div
-        className="p-8 my-4 sm:my-8"
+        className="my-4 sm:my-8"
         style={{
           display: "flex",
           justifyContent: "center",

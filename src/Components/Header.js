@@ -9,7 +9,7 @@ export default function Header() {
       </div>
       <div className="flex gap-10 pl-[40rem] z-20">
         <NavLink to="/"><h1 className="text-sm text-yellow-300 font-pusab curs menu">HOME</h1></NavLink>
-        <NavLink to="about"><h1 className="text-sm text-yellow-300 font-pusab curs menu">ABOUT</h1></NavLink>
+        <NavLink to="about"><h1 className="text-sm text-yellow-300 font-pusab curs menu">ABOUT US</h1></NavLink>
         <NavLink to="sponsor"><h1 className="text-sm text-yellow-300 font-pusab curs menu">SPONSOR</h1></NavLink>
       </div>
     </nav>

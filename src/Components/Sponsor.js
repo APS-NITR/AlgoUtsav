@@ -7,7 +7,8 @@ import SponsorCard from "./SponsorCard";
 import uuid4 from "uuid4";
 import SponsorHead from "../assets/Images/Sponsors.png";
 import "../Styles/Sponsors.css";
-
+import meteor from "../assets/Images/Meteor_10.png";
+import blueplanet from "../assets/Images/blueplanet2.png";
 export default function Sponsor() {
   let cards = [
     {
@@ -70,6 +71,13 @@ export default function Sponsor() {
 
   return (
     <div className="bg-cover bg-fixed bg-no-repeat" style={{ padding: 4 }}>
+      <div className='z-10'>
+        <img
+            alt='meteor'
+            src={meteor}
+            style={{ position: "absolute", top: "0", left: "0", maxWidth: "35%" }}
+        />
+      </div>
       <div
         className="my-4 sm:my-8"
         style={{
@@ -93,6 +101,13 @@ export default function Sponsor() {
         margin="auto"
         offset={4}
       />
+      <div className='z-10'>
+        <img
+            alt='blue planet'
+            src={blueplanet}
+            style={{ position: "absolute", top: "0", right: "0", maxWidth: "35%" }}
+        />
+      </div>
     </div>
   );
 }

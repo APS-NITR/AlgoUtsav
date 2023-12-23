@@ -12,12 +12,10 @@ export default function Header() {
         setActive(true);
       }
     }
-  }
-
+  } 
   useEffect(() => {
     document.body.className = isMenuActive ? "overflow-hidden" : "";
   }, [isMenuActive]);
-
   return (
     <>
       <Mobnav isMenuActive={isMenuActive} toggleActive={toggleActive}/>

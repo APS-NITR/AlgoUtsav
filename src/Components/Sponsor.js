@@ -71,7 +71,7 @@ export default function Sponsor() {
 
   return (
     <div className="bg-cover bg-fixed bg-no-repeat" style={{ padding: 4 }}>
-      <div className='z-10'>
+      <div className="meteor">
         <img
             alt='meteor'
             src={meteor}
@@ -79,7 +79,7 @@ export default function Sponsor() {
         />
       </div>
       <div
-        className="my-4 sm:my-8"
+        className="my-4 sm:my-8 z-30"
         style={{
           display: "flex",
           justifyContent: "center",

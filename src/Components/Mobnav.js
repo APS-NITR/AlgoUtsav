@@ -62,11 +62,11 @@ const MobNav = ({ isMenuActive, toggleActive }) => {
             </div>
           </button>
           <nav
-            className={`duration-500 absolute inset-x-0 top-full z-10 flex-col p-6 pb-10 shadow-2xl flex transition-[opacity] ${
+            className={`duration-500 absolute inset-x-0 top-full z-10 flex-col p-6 pb-12 back downbar shadow-2xl flex transition-[opacity] ${
               isMenuActive ? "opacity-100" : "opacity-0 pointer-events-none z-20"
             }`}
           >
-            <div className="flex flex-col mt-6 divide-y divide-white/5 border-y border-y-white/5">
+            <div className="flex flex-col mt-4 divide-y divide-white/5 border-y border-y-white/5">
               {navLinks.map((navLink, index) => (
                 <NavLink
                   className="flex items-center gap-2 py-4 text-xs text-yellow-300 font-pusab curs "

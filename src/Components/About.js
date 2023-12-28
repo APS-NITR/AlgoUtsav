@@ -13,22 +13,24 @@ export default function About() {
             style={{ position: "absolute", top: "0", left: "0", maxWidth: "35%" }}
         />
       </div>
-      <div style={{display: "flex", justifyContent: "center", width: "100%", alignItems: "center" }}>
+      <div
+        className="my-4 sm:my-8 z-30"
+        style={{display: "flex", justifyContent: "center", width: "100%", alignItems: "center",}}
+      >
         <img
           src={about}
-          alt="sponsor_heading"
-          style={{ maxWidth: "582px", maxHeight: "58px" }}
+          alt="_about_us"
+          style={{ maxWidth: "100%", maxHeight: "58px" }}
         />
       </div>
-      <div className='flex justify-between'>
-        <div >
+      <div className='flex justify-between about_cont'>
+        <div className='astro'>
           <img
            alt='_the_astromnomer'
            src={astronomer}
-           style={{ maxWidth: "22rem", marginLeft: "15rem"}}
           />
         </div>
-        <div className='p-14 pl-10 pr-48'>
+        <div className='p-14 pl-10 pr-48 astro_content'>
           <h1 className="text-base text-yellow-400 font-pusab">
             lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             pellentesque, nisl nec interdum venenatis, nisl nibh gravida
@@ -42,7 +44,7 @@ export default function About() {
           </h1>
         </div>
       </div>
-      <div className='z-10'>
+      <div className='z-10 astro_img'>
         <img
             alt='blue planet'
             src={blueplanet}

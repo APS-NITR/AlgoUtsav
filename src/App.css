@@ -47,9 +47,44 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
+.astro{
+  margin-left: 15rem;
+}
+.astro > img{
+  max-width: 22rem;
+}
+.downbar{
+  min-height: 0vh;
+  background-size: auto;
+  width: 100%;
+  margin: 0;
+  padding: 22px;
+}
 @media screen and (max-width: 768px){
   .schd{
+    display: none;
+  }
+  .astro{
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+  .about_cont{
+    flex-direction: column;
+  }
+  .astro_content{
+    margin: 20px;
+    padding: 0;
+    z-index: 5;
+  }
+  .astro_content > h1{
+    font-size: 0.9rem;
+  }
+  .astro_img{
+    position: relative;
+    z-index: 1;
+  }
+  .meteor{
     display: none;
   }
 }
@@ -62,5 +97,23 @@
   .schd1{
     gap: 2rem;            
     padding-left: 100px;      
+  }
+  .astro{
+    margin-left: 4rem;
+  }
+  .astro > img{
+    max-width: 17rem;
+  }
+  .astro_content{
+    margin: 20px;
+    padding: 0px;
+    padding-right: 7.5px;
+    z-index: 5;
+  }
+  .astro_content > h1{
+    font-size: 0.9rem;
+  }
+  .meteor{
+    display: none;
   }
 }

@@ -47,3 +47,20 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+@media screen and (max-width: 768px){
+  .schd{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1240px) and (min-width: 768px){
+  .schd{
+    display: flex;
+    justify-content: space-around;             
+  }    
+  .schd1{
+    gap: 2rem;            
+    padding-left: 100px;      
+  }
+}

@@ -1,13 +1,9 @@
 import React from "react";
 import head from "../assets/AlGoUTsaV.png";
-import greenplanet from "../assets/Home assets/Green Planet.png";
-import spaceshuttle from "../assets/Home assets/Space Shuttle.png";
-import shootingstar from "../assets/Home assets/Shooting star.png";
 import register from "../assets/Home assets/Union.png";
-import shuttle from "../assets/Home assets/Shuttle.png";
 export default function Home() {
   return (
-    <div className="">
+    <div className="" id="home">
       <div
         className="mt-[50%] md:mt-[80px] "
         style={{
@@ -59,42 +55,16 @@ export default function Home() {
       
 
       <div>
-        <img
-          alt="green planet"
-          src={greenplanet}
-          className="max-w-[45%] md:max-w-[35%]"
-          style={{
-            position: "absolute",
-            bottom: "0",
-            right: "0",
-            left: "0",
-            
-          }}
-        />
+        {/* put green planet */}
       </div>
       <div>
-        <img
-          alt="Space Shuttle"
-          src={spaceshuttle}
-          className="max-w-[35%] md:max-w-[23%]"
-          style={{ position: "absolute", bottom: "10px", right: "0px" }}
-        />
+        {/* put space shuttl3-1 */}
       </div>
       <div>
-        <img
-          alt="Shooting Star"
-          src={shootingstar}
-          className="max-w-[23%] md:max-w-[16%]"
-          style={{ position: "absolute", top: "0", right: "0" }}
-        />
+        {/* put shooting star */}
       </div>
       <div>
-        <img
-          alt="Space Shuttle-2"
-          src={shuttle}
-          className="max-w-[23%] md:max-w-[16%]"
-          style={{ position: "absolute", top: "0", left: "0" }}
-        />
+        {/* put space shuttle-2 */}
       </div>
     </div>
   );

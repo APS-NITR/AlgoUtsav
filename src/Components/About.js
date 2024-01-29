@@ -1,17 +1,11 @@
 import React from 'react'
 import about from '../assets/Images/Aboutus.png';
 import astronomer from '../assets/Images/astronomer.png';
-import greenplanet from '../assets/Images/greenplanet1.png';
-import blueplanet from '../assets/Images/blueplanet1.png';
 export default function About() {
   return (
-    <div>
+    <div id="about">
       <div className='z-10'>
-        <img
-            alt='green planet'
-            src={greenplanet}
-            style={{ position: "absolute", top: "0", left: "0", maxWidth: "35%" }}
-        />
+        {/* put green planet */}
       </div>
       <div
         className="my-4 sm:my-8 z-30"
@@ -45,11 +39,7 @@ export default function About() {
         </div>
       </div>
       <div className='z-10 astro_img'>
-        <img
-            alt='blue planet'
-            src={blueplanet}
-            style={{ position: "absolute", bottom: "0", right: "0", maxWidth: "35%" }}
-        />
+        {/* put blue planet */}
       </div>
     </div>
     

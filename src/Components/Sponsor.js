@@ -6,9 +6,8 @@ import LiciousLogo from "../assets/Images/LiciousLogo.webp";
 import SponsorCard from "./SponsorCard";
 import uuid4 from "uuid4";
 import SponsorHead from "../assets/Images/Sponsors.png";
+import mountain from "../assets/mountain.jpg";
 import "../Styles/Sponsors.css";
-import meteor from "../assets/Images/Meteor_10.png";
-import blueplanet from "../assets/Images/blueplanet2.png";
 export default function Sponsor() {
   let cards = [
     {
@@ -70,13 +69,9 @@ export default function Sponsor() {
   ];
 
   return (
-    <div className="bg-cover bg-fixed bg-no-repeat" style={{ padding: 4 }}>
+    <div className="bg-cover bg-fixed bg-no-repeat" style={{ padding: 4 }} id="sponsor">
       <div className="meteor">
-        <img
-            alt='meteor'
-            src={meteor}
-            style={{ position: "absolute", top: "0", left: "0", maxWidth: "35%" }}
-        />
+        {/* put meteor */}
       </div>
       <div
         className="my-4 sm:my-8 z-30"
@@ -102,11 +97,11 @@ export default function Sponsor() {
         offset={4}
       />
       <div className='z-10'>
-        <img
-            alt='blue planet'
-            src={blueplanet}
-            style={{ position: "absolute", top: "0", right: "0", maxWidth: "35%" }}
-        />
+        {/* put blueplanet */}
+      </div>
+      <div className='z-10 mt-[-400px]'>
+        {/* put mountain */}
+        <img src={mountain} alt="_the_mountain" />
       </div>
     </div>
   );

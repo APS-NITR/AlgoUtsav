@@ -1,19 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import logo from "../assets/Logo.png";
 const MobNav = ({ isMenuActive, toggleActive }) => {
   const navLinks = [
     {
       title: "HOME",
-      path: "/",
+      path: "#home",
     },
     {
       title: "ABOUT US",
-      path: "/about",
+      path: "#about",
     },
     {
       title: "SPONSOR",
-      path: "/sponsor",
+      path: "#sponsor",
     },
   ];
   return (
@@ -24,7 +23,7 @@ const MobNav = ({ isMenuActive, toggleActive }) => {
         <div className="flex items-center justify-between">
           <div className="flex">
             <div className="z-20">
-                <NavLink to="/"><img src={logo} alt="the_logo" className="curs"/></NavLink>
+                <img src={logo} alt="the_logo" className="curs"/>
             </div>
           </div>
           <button
@@ -68,14 +67,17 @@ const MobNav = ({ isMenuActive, toggleActive }) => {
           >
             <div className="flex flex-col mt-4 divide-y divide-white/5 border-y border-y-white/5">
               {navLinks.map((navLink, index) => (
-                <NavLink
+                <div
                   className="flex items-center gap-2 py-4 text-xs text-yellow-300 font-pusab curs "
                   key={index}
-                  to={navLink.path}
                   onClick={toggleActive}
                 >
-                  <div className="menu">{navLink.title}</div>
-                </NavLink>
+                  <div className="menu">
+                    <a href={navLink.path}>
+                      {navLink.title}
+                    </a>
+                  </div>
+                </div>
               ))}
             </div>
           </nav>

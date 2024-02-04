@@ -2,7 +2,14 @@ import React, {useState, useEffect} from "react";
 import { Link } from 'react-scroll';
 import logo from "../assets/Logo.png";
 import Mobnav from "./Mobnav";
+import backgroundImage from '../assets/HomePage.png';
 export default function Header() {
+  const containerStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    
+  };
   const [isMenuActive, setActive] = useState(false);
   function toggleActive() {
     if (window.innerWidth < 768) {
@@ -31,9 +38,9 @@ export default function Header() {
     },
   ];
   return (
-    <>
+    <div style={containerStyle}>
     <Mobnav isMenuActive={isMenuActive} toggleActive={toggleActive}/>
-      <nav className="flex justify-around items-center gap-2 pt-4 pb-4 schd">
+      <nav className="flex justify-around items-center gap-2 pt-4 pb-4 schd" >
         <div className="z-20">
           <img src={logo} alt="the_logo" className="curs"/>
         </div>
@@ -53,6 +60,6 @@ export default function Header() {
           ))}
         </div>
       </nav>
-    </>
+    </div>
   );
 }

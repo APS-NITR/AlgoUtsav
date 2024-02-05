@@ -1,11 +1,38 @@
 import React from "react";
 import head from "../assets/AlGoUTsaV.png";
 import register from "../assets/Home assets/Union.png";
+import green_planet from '../assets/Home assets/Green Planet.png';
+import space_shuttle from '../assets/Home assets/Space Shuttle.png';
+import shooting_star from '../assets/Home assets/Shooting star.png';
+import shuttle from '../assets/Home assets/Shuttle.png'
+//import backgroundImage from '../assets/HomePage.png';
 export default function Home() {
-  return (
-    <div className="" id="home">
+ /* const containerStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    minHeight: '100vh',
+    style={containerStyle}
+  };*/
+ return (
+    <div className="" id="home" >
+      <div className="flex justify-between">
+      <img
+           alt='shuttle'
+           src={shuttle}
+           className="w-1/3  lg:w-auto"
+          />
+      <img
+           alt='_shooting_star'
+           src={shooting_star}
+           className="w-1/3 h-1/2 lg:w-auto"
+          />
+      
+      
+      </div>
       <div
-        className="mt-[50%] md:mt-[80px] "
+        className=""
         style={{
           display: "flex",
           justifyContent: "center",
@@ -17,7 +44,7 @@ export default function Home() {
         <img
           src={head}
           alt="heading"
-          style={{  width: "auto", maxHeight: "140px" }}
+          style={{  width: "auto", maxHeight: "140px" ,maxWidth:"80%"}}
         />
       </div>
       <a href="https://unstop.com/" target="_blank" rel="noopener noreferrer">
@@ -34,7 +61,7 @@ export default function Home() {
           <img
             src={register}
             alt="heading"
-            style={{ width: "auto", maxHeight: "140px", position: "relative" }}
+            style={{ width: "auto", maxWidth:"90%",maxHeight: "140px", position: "relative" }}
           />
           <div
             style={{
@@ -54,18 +81,21 @@ export default function Home() {
       </a>
       
 
-      <div>
-        {/* put green planet */}
+      <div className="flex justify-between">
+      <img
+           alt='_green_planet'
+           src={green_planet}
+           className="w-1/2 lg:w-auto"
+          />
+      
+      
+      <img
+           alt='_space_shuttle'
+           src={space_shuttle}
+           className="mx-2 w-1/3 lg:w-auto"
+          />
       </div>
-      <div>
-        {/* put space shuttl3-1 */}
-      </div>
-      <div>
-        {/* put shooting star */}
-      </div>
-      <div>
-        {/* put space shuttle-2 */}
-      </div>
+      
     </div>
   );
 }

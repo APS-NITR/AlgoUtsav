@@ -8,7 +8,16 @@ import uuid4 from "uuid4";
 import SponsorHead from "../assets/Images/Sponsors.png";
 import mountain from "../assets/mountain.jpg";
 import "../Styles/Sponsors.css";
+import backgroundImage from '../assets/HomePage.png';
 export default function Sponsor() {
+  const containerStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    minHeight: '100vh',
+    padding:4,
+  };
   let cards = [
     {
       key: uuid4(),
@@ -69,7 +78,7 @@ export default function Sponsor() {
   ];
 
   return (
-    <div className="bg-cover bg-fixed bg-no-repeat" style={{ padding: 4 }} id="sponsor">
+    <div className="bg-cover bg-fixed bg-no-repeat" style={containerStyle} id="sponsor">
       <div className="meteor">
         {/* put meteor */}
       </div>
@@ -89,12 +98,15 @@ export default function Sponsor() {
         />
       </div>
       <Carroussel
+        
         showArrows={false}
         cards={cards}
         height="420px"
         width="90vw"
         margin="auto"
         offset={4}
+        background={backgroundImage}
+        
       />
       <div className='z-10'>
         {/* put blueplanet */}

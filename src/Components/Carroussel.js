@@ -70,6 +70,7 @@ export default function Carroussel(props) {
           style={{
             width: props.width,
             margin: props.margin,
+            
           }}
         >
           <Carousel

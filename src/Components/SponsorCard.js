@@ -4,7 +4,7 @@ import "../index.css";
 const SponsorCard = (props) => {
   return (
     <div
-      className="rounded-3xl p-4 bg-sponsor-pink shadow-md shadow-sponsor-pink"
+      className="rounded-3xl p-4 bg-sponsor-pink shadow-md shadow-sponsor-pink z-10"
       style={{ textAlign: "center", alignItems: "center", justifyContent: 'center' }}
     >
       <img

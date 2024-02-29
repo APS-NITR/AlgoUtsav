@@ -19,6 +19,16 @@
   font-family: "pusab";
   src: url("../public/fonts/bit-pusab.ttf") format("truetype");
 }
+.perman{
+  position: sticky;
+  top: 0;
+}
+.navbar{
+  z-index:20; 
+  background: rgba(0, 0, 0, 0.393);
+  backdrop-filter: blur(10px);
+  transition: .5s ease-in-out;
+}
 .menu {
   position: relative;
   text-decoration: none;

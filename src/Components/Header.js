@@ -2,15 +2,17 @@ import React, {useState, useEffect} from "react";
 import { Link } from 'react-scroll';
 import logo from "../assets/Logo.png";
 import Mobnav from "./Mobnav";
-import backgroundImage from '../assets/HomePage.png';
+import brochure from "../assets/assignment4.pdf"
 export default function Header() {
-  const containerStyle = {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    
-  };
   const [isMenuActive, setActive] = useState(false);
+  const [fix,setFix] = useState(false);
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= 50) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
+  });
   function toggleActive() {
     if (window.innerWidth < 768) {
       if (isMenuActive) {
@@ -36,15 +38,19 @@ export default function Header() {
       title: "SPONSOR",
       path: "sponsor",
     },
+    {
+      title: "FAQ",
+      path: "faq",
+    }
   ];
   return (
-    <div style={containerStyle}>
+    <div className={fix ? 'navbar perman' : 'perman'}>
     <Mobnav isMenuActive={isMenuActive} toggleActive={toggleActive}/>
       <nav className="flex justify-around items-center gap-2 pt-4 pb-4 schd" >
         <div className="z-20">
           <img src={logo} alt="the_logo" className="curs"/>
         </div>
-        <div className="flex gap-10 pl-[40rem] z-20 schd1">
+        <div className="flex gap-10 z-20 schd1">
           {navLinks.map((link,index) => (
             <h1 className="text-sm text-yellow-300 font-pusab curs menu" key={index}>
               <Link 
@@ -58,6 +64,18 @@ export default function Header() {
               </Link>
             </h1>
           ))}
+        </div>
+        <div>
+          <a
+            href={brochure}
+            download="AlgoUtsavBrochure.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h1 className="text-sm text-yellow-300 font-pusab curs menu">
+              Brochure
+            </h1>
+          </a>
         </div>
       </nav>
     </div>

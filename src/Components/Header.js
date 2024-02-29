@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import { Link } from 'react-scroll';
 import logo from "../assets/Logo.png";
 import Mobnav from "./Mobnav";
+import { FaDownload } from "react-icons/fa";
 import brochure from "../assets/assignment4.pdf"
 export default function Header() {
   const [isMenuActive, setActive] = useState(false);
@@ -65,17 +66,18 @@ export default function Header() {
             </h1>
           ))}
         </div>
-        <div>
+        <div className="flex gap-1">
           <a
             href={brochure}
             download="AlgoUtsavBrochure.pdf"
             target="_blank"
             rel="noreferrer"
           >
-            <h1 className="text-sm text-yellow-300 font-pusab curs menu">
+            <h1 className="flex text-sm text-yellow-300 font-pusab curs menu">
               Brochure
             </h1>
           </a>
+          <FaDownload className="text-sm text-yellow-300 font-pusab curs menu" size='20px'/>
         </div>
       </nav>
     </div>

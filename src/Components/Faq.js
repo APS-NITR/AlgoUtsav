@@ -7,26 +7,26 @@ export default function Faq() {
   let faqs = [
     {
       title:"Item 1",
-      content:"content 1"
+      content:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
       title:"item 2",
-      content:"content 2"
+      content:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
       title:"item 3",
-      content:"content 3"
+      content:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
       title:"item 4",
-      content:"content 4"
+      content:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
   ];
 
   return (
-    <div id="faq">
+    <div className="pt-2" id="faq">
       <div
-        className="my-4 sm:my-8 sm:mt-[-6em] z-30"
+        className="my-4 sm:my-8 sm:mt-20 z-30"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -40,7 +40,7 @@ export default function Faq() {
           style={{ maxWidth: "100%", maxHeight: "58px" }} 
         />
       </div>
-      <div className='flex flex-wrap justify-center align-middle'>
+      <div className='flex flex-wrap justify-center gap-6 align-middle'>
         {faqs.map((faq) => {
           return (
             <Accordion key={uuid4()} title={faq.title} content={faq.content} />

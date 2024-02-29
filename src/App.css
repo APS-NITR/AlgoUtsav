@@ -29,6 +29,10 @@
   backdrop-filter: blur(10px);
   transition: .5s ease-in-out;
 }
+.footer{
+  background: rgba(0, 0, 0, 0.393);
+  backdrop-filter: blur(10px); 
+}
 .menu {
   position: relative;
   text-decoration: none;

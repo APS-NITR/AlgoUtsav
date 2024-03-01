@@ -40,7 +40,7 @@ export default function About() {
           />
         </div>
         <div className='p-14 pl-10 pr-48 astro_content'>
-          <h1 className="text-base  text-yellow-400 font-pusab">
+          <h1 className="border-[rgba(167,31,252,0.5)] border-2 m-4 p-4 rounded-lg sm:border-none sm:m-0 sm:p-0 text-[12px] sm:text-base text-yellow-400 font-pusab">
             AlgoUtsav is organized by Algorithms and Programming Society, NIT Rourkela (NITR) registered under the Technical Society of Student Activity Centre (SAC), NIT Rourkela.<br /><br />
             It is a competition designed to test your abilities to solve a range of time- and memory-limited competitive programming issues.<br /><br />
             You will also compete against students from other colleges, get to know them, and learn from their replies.By taking part in this event, you may advance your professional and personal development while showcasing your programming prowess and excitement.

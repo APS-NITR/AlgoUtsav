@@ -4,24 +4,24 @@ import timeline from '../assets/Images/Timeline.png';
 function Timeline() {
   let event = [
     {
-      name:"Event 1",
-      time:"10:00 AM",
-      date:"January 1, 2024"
+      name:"Registration Begins",
+      time:"1 Mar 24 to 15 Mar 2024 11:59 PM IST",
+      detail:"Regitration are open at unstop"
     },
     {
-      name:"Event 1",
-      time:"10:00 AM",
-      date:"January 1, 2024"
+      name:"Contest 1",
+      time:"16 Mar 24, 02:00 PM to 05:00 PM IST",
+      detail:"contest will comence and begin in unstop"
     },
     {
-      name:"Event 1",
-      time:"10:00 AM",
-      date:"January 1, 2024"
+      name:"contest 2",
+      time:"17 Mar 24, 02:00 PM to 05:00 PM IST",
+      detail:"contest will comence and begin in codeforces"
     },
     {
-      name:"Event 1",
-      time:"10:00 AM",
-      date:"January 1, 2024"
+      name:"Guest Lecture",
+      time:"17 mar 24, 06:00 PM to 07:00 PM IST",
+      detail:"Guest lecture will be conducted by xyz"
     }
   ]
   return (
@@ -40,9 +40,9 @@ function Timeline() {
         {event.map((eve) => {
           return (
             <div className="w-3/4 border-2 border-[rgba(167,31,252,0.5)] footer text-white rounded-lg p-4 mb-4">
-              <h3 className="text-lg font-semibold mb-2">{eve.name}</h3>
-              <p className="text-sm">Time: {eve.time}</p>
-              <p className="text-sm">Date: {eve.date}</p>
+              <h3 className="text-sm text-yellow-300 font-pusab mb-2">{eve.name}</h3>
+              <p className="text-base">Duration : {eve.time}</p>
+              <p className="text-base">{eve.detail}</p>
             </div>
           );
         })}

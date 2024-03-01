@@ -5,8 +5,8 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 function Footer() {
   return (
-    <footer className="footer py-20 mt-40">
-      <div className="container mx-auto flex items-center justify-between">
+    <footer className="footer text-center py-20 mt-40">
+      <div className="container mx-auto flex flex-wrap items-center justify-around">
         {/* Left side: Contact Us */}
         <div className="text-white">
           <h3 className="text-base  text-yellow-400 font-pusab mb-2">Contact Us</h3>
@@ -18,7 +18,7 @@ function Footer() {
           </div>
         </div>
         {/* Right side: Social Links */}
-        <div className="text-white">
+        <div className="text-white pt-4 sm:p-0">
           <h3 className="text-base  text-yellow-400 font-pusab mb-2">Follow Us</h3>
           <div className="flex">
             <a href="https://www.threads.net/@aps.nitr" className=" hover:text-gray-400 text-white mr-4">

@@ -3,27 +3,12 @@ import head from "../assets/AlGoUTsaV.png";
 import register from "../assets/Home assets/Union.png";
 import green_planet from '../assets/Home assets/Green Planet.png';
 import space_shuttle from '../assets/Home assets/Space Shuttle.png';
-// import shooting_star from '../assets/Home assets/Shooting star.png';
-// import shuttle from '../assets/Home assets/Shuttle.png'
-//import backgroundImage from '../assets/HomePage.png';
 export default function Home() {
- /* const containerStyle = {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    minHeight: '100vh',
-    style={containerStyle}
-  };*/
  return (
     <div className="" id="home" >
-      {/* <div className="relative flex justify-around">
-        
-      </div> */}
       <div
-        className=""
+        className="algo_heading sm:mt-28"
         style={{
-          marginTop: "7.5em",
           display: "flex",
           justifyContent: "center",
           width: "100%",
@@ -31,21 +16,11 @@ export default function Home() {
           height: "20em",
         }}
       >
-        {/* <img
-            alt='shuttle'
-            src={shuttle}
-            className="object-left w-1/3 md:w-4 lg:w-[120px] "
-        /> */}
         <img
           src={head}
           alt="heading"
           style={{  width: "auto", maxHeight: "140px" ,maxWidth:"80%"}}
         />
-        {/* <img
-            alt='_shooting_star'
-            src={shooting_star}
-            className="object-right pl-11 w-1/3 h-1/2 lg:w-[120px]"
-        /> */}
       </div>
       <a href="https://unstop.com/hackathons/algoutsav-2024-nit-rourkela-905708" target="_blank" rel="noopener noreferrer">
         <div
@@ -71,7 +46,7 @@ export default function Home() {
               transform: "translate(-50%, -50%)",
             }}
           >
-            <p className="text-yellow-400 text-[13px] md:text-[17px] font-normal  font-pusab curs">
+            <p className="text-yellow-400 text-[13px] md:text-[17px] font-normal font-pusab curs">
               register on unstop
             </p>
           </div>
@@ -83,12 +58,10 @@ export default function Home() {
            src={green_planet}
            className="w-1/2 lg:w-[320px]"
         />
-      
-      
-        <img
+        <img 
            alt='_space_shuttle'
            src={space_shuttle}
-           className="mx-2 w-1/3 lg:w-[230px]"
+           className="mx-2 w-1/3 hidden sm:block lg:w-[230px]"
          />
       </div>
       

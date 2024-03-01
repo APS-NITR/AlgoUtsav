@@ -91,9 +91,6 @@
     padding: 0;
     z-index: 5;
   }
-  .astro_content > h1{
-    font-size: 0.9rem;
-  }
   .astro_img{
     position: relative;
     z-index: 1;

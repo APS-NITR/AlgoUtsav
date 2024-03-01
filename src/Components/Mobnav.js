@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../assets/Logo.png";
+import { FaDownload } from "react-icons/fa";
+import brochure from "../assets/assignment4.pdf"
+import uuid4 from "uuid4";
 const MobNav = ({ isMenuActive, toggleActive }) => {
   const navLinks = [
     {
@@ -14,6 +17,10 @@ const MobNav = ({ isMenuActive, toggleActive }) => {
       title: "SPONSOR",
       path: "#sponsor",
     },
+    {
+      title: "FAQS",
+      path: "#faq",
+    }
   ];
   return (
     <header
@@ -79,6 +86,24 @@ const MobNav = ({ isMenuActive, toggleActive }) => {
                   </div>
                 </div>
               ))}
+                <div
+                  className="flex items-center gap-2 py-4 text-xs text-yellow-300 font-pusab curs "
+                  key={uuid4()}
+                  onClick={toggleActive}
+                >
+                  <div className="menu">
+                    <a
+                      href={brochure}
+                      download="AlgoUtsavBrochure.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <h1 className="flex text-sm text-yellow-300 font-pusab curs menu">
+                        Brochure<FaDownload className="text-sm text-yellow-300 font-pusab curs menu" size='20px'/>
+                      </h1>
+                    </a>
+                  </div>
+              </div>
             </div>
           </nav>
         </div>

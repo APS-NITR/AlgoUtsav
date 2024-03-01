@@ -18,11 +18,10 @@ function Prizes() {
           style={{ maxWidth: "70%", maxHeight: "58px" }}
         />
       </div>
-      <div className="flex justify-center gap-20 flex-wrap mt-[60px]">
-        <SponsorCard image={silver} title="Prizes Worth 7k"/>
+      <div className="flex justify-center gap-10 sm:gap-20 flex-wrap mt-[60px]">
         <SponsorCard image={gold} title="Prizes Worth 10k"/>
+        <SponsorCard image={silver} title="Prizes Worth 7k"/>
         <SponsorCard image={bronze} title="Prizes Worth 5k"/>
-        
       </div>
       
     </div>

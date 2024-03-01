@@ -26,13 +26,7 @@ export default function Faq() {
   return (
     <div className="pt-2" id="faq">
       <div
-        className="my-4 sm:my-8 sm:mt-20 z-30"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          width: "100%",
-          alignItems: "center",
-        }}
+        className="flex justify-center align-middle ml-14 sm:ml-0 w-4/5 sm:w-full my-4 sm:my-8 sm:mt-20 z-30"
       >
         <img
           src={questions}

@@ -9,11 +9,17 @@ import Prizes from "./Components/Prizes";
 import "./App.css";
 import Layout from "./Components/Layout";
 import Timeline from "./Components/Timeline";
-
+import StarSky from "react-star-sky";
+import "react-star-sky/dist/index.css";
+// import StarfieldAnimation from "react-starfield-animation";
 const App = () => {
   
   return (
+    <>
+    <StarSky/>
+    
     <Layout>
+    {/* <StarSky/> */}
       <Header />
       <Home/>
       <About/>
@@ -24,6 +30,7 @@ const App = () => {
       <Footer />
     </Layout>
     
+    </>
   );
 };
 

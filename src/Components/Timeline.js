@@ -1,6 +1,6 @@
 import React from 'react'
-import blue_planet from '../assets/Images/blueplanet1.png';
-import timeline from '../assets/Images/Timeline.png';
+// import blue_planet from '../assets/Images/blueplanet1.png';
+// import timeline from '../assets/Images/Timeline.png';
 function Timeline() {
   let event = [
     {
@@ -31,7 +31,7 @@ function Timeline() {
         style={{display: "flex", justifyContent: "center", width: "100%", alignItems: "center",}}
       >
         <img
-          src={timeline}
+          src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361367/AlgoUtsav/Images/Timeline_weadwb.png"
           alt="_about_us"
           style={{ maxWidth: "70%", maxHeight: "58px" }}
         />
@@ -50,7 +50,7 @@ function Timeline() {
       <div className='z-10 astro_img flex justify-end'>
       <img
            alt='_blue_planet'
-           src={blue_planet}
+           src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361346/AlgoUtsav/Images/blueplanet1_d6ofhd.png"
            className="w-1/2 lg:w-[280PX] "
           />
       </div>

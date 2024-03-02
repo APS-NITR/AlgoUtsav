@@ -1,7 +1,7 @@
 import React from 'react'
-import about from '../assets/Images/Aboutus.png';
-import astronomer from '../assets/Images/astronomer.png';
-import green_planet from '../assets/Images/greenplanet1.png';
+// import about from '../assets/Images/Aboutus.png';
+// import astronomer from '../assets/Images/astronomer.png';
+// import green_planet from '../assets/Images/greenplanet1.png';
 
 //import backgroundImage from '../assets/Images/HomePage2.png'
 export default function About() {
@@ -18,7 +18,7 @@ export default function About() {
       <div className='z-10'>
         <img
            alt='_green_planet'
-           src={green_planet}
+           src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361367/AlgoUtsav/Images/greenplanet1_zjp6pe.png"
            className="w-1/2 lg:w-[320px]"
         />
       </div>
@@ -27,7 +27,7 @@ export default function About() {
         style={{display: "flex", justifyContent: "center", width: "100%", alignItems: "center",}}
       >
         <img
-          src={about}
+          src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361341/AlgoUtsav/Images/Aboutus_cic9ox.png"
           alt="_about_us"
           style={{ maxWidth: "70%", maxHeight: "58px" }}
         />
@@ -36,7 +36,7 @@ export default function About() {
         <div className='flex justify-center astro' style={{ maxHeight:"auto" }}>
           <img
            alt='_the_astromnomer'
-           src={astronomer}
+           src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361384/AlgoUtsav/Images/astronomer_td42te.png"
           />
         </div>
         <div className='p-14 pl-10 pr-48 astro_content'>

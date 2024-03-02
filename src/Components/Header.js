@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { Link } from 'react-scroll';
-import logo from "../assets/Logo.png";
+// import logo from "../assets/Logo.png";
 import Mobnav from "./Mobnav";
 import { FaDownload } from "react-icons/fa";
 import brochure from "../assets/AlgoutstavCollegeBrochure.pdf"
@@ -49,7 +49,7 @@ export default function Header() {
     <Mobnav isMenuActive={isMenuActive} toggleActive={toggleActive}/>
       <nav className="flex justify-around items-center gap-2 pt-4 pb-4 schd" >
         <div className="z-20">
-          <img src={logo} alt="the_logo" className="curs"/>
+          <img src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361572/AlgoUtsav/Logo_gfndql.png" alt="the_logo" className="curs"/>
         </div>
         <div className="flex gap-10 z-20 schd1">
           {navLinks.map((link,index) => (

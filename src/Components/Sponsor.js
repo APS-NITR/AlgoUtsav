@@ -1,9 +1,9 @@
 import React from "react";
 // import Carroussel from "./Carroussel";
-import OracleLogo from "../assets/Images/OracleLogo.png";
+// import OracleLogo from "../assets/Images/OracleLogo.png";
 import SponsorCard from "./SponsorCard";
-import SponsorHead from "../assets/Images/Sponsors.png";
-import blue_planet from '../assets/Images/blueplanet2.png';
+// import SponsorHead from "../assets/Images/Sponsors.png";
+// import blue_planet from '../assets/Images/blueplanet2.png';
 import "../Styles/Sponsors.css";
 export default function Sponsor() {
   return (
@@ -11,7 +11,7 @@ export default function Sponsor() {
       <div className='z-1 astro_img flex justify-end'>
         <img
            alt='_blue_planet'
-           src={blue_planet}
+           src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361346/AlgoUtsav/Images/blueplanet2_dsxyel.png"
            className="w-1/2 lg:w-[280PX] "
         />
       </div>
@@ -25,16 +25,16 @@ export default function Sponsor() {
         }}
       >
         <img
-          src={SponsorHead}
+          src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361375/AlgoUtsav/Images/Sponsors_so1y2r.png"
           alt="sponsor_heading"
           style={{ maxWidth: "100%", maxHeight: "58px" }} 
         />
       </div>
       <div className="flex justify-center gap-10 flex-wrap mt-[100px]">
-        <SponsorCard image={OracleLogo} title="Company 9"/>
-        <SponsorCard image={OracleLogo} title="Company 9"/>
-        <SponsorCard image={OracleLogo} title="Company 9"/>
-        <SponsorCard image={OracleLogo} title="Company 9"/>
+        <SponsorCard image="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361348/AlgoUtsav/Images/OracleLogo_mdh5xc.png" title="Company 9"/>
+        <SponsorCard image="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361348/AlgoUtsav/Images/OracleLogo_mdh5xc.png" title="Company 9"/>
+        <SponsorCard image="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361348/AlgoUtsav/Images/OracleLogo_mdh5xc.png" title="Company 9"/>
+        <SponsorCard image="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361348/AlgoUtsav/Images/OracleLogo_mdh5xc.png" title="Company 9"/>
       </div>
     </div>
   );

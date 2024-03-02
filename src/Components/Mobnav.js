@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/Logo.png";
 import { FaDownload } from "react-icons/fa";
-import brochure from "../assets/assignment4.pdf"
+import brochure from "../assets/AlgoutstavCollegeBrochure.pdf"
 import uuid4 from "uuid4";
 const MobNav = ({ isMenuActive, toggleActive }) => {
   const navLinks = [

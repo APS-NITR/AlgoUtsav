@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/Logo.png";
+// import logo from "../assets/Logo.png";
 import { FaDownload } from "react-icons/fa";
 import brochure from "../assets/assignment4.pdf"
 import uuid4 from "uuid4";
@@ -30,7 +30,7 @@ const MobNav = ({ isMenuActive, toggleActive }) => {
         <div className="flex items-center justify-between">
           <div className="flex">
             <div className="z-20">
-                <img src={logo} alt="the_logo" className="curs"/>
+                <img src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361572/AlgoUtsav/Logo_gfndql.png" alt="the_logo" className="curs"/>
             </div>
           </div>
           <button

@@ -1,5 +1,5 @@
 import React from 'react'
-import questions from "../assets/Images/questions.png";
+// import questions from "../assets/Images/questions.png";
 import Accordion from './Accordion';
 import uuid4 from 'uuid4';
 
@@ -29,7 +29,7 @@ export default function Faq() {
         className="flex justify-center align-middle ml-14 sm:ml-0 w-4/5 sm:w-full my-4 sm:my-8 sm:mt-20 z-30"
       >
         <img
-          src={questions}
+          src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361364/AlgoUtsav/Images/questions_jhjqsu.png"
           alt="sponsor_heading"
           style={{ maxWidth: "100%", maxHeight: "58px" }} 
         />

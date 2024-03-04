@@ -41,8 +41,8 @@ function Timeline() {
           return (
             <div className="w-3/4 border-2 border-[rgba(167,31,252,0.5)] footer text-white rounded-lg p-4 mb-4">
               <h3 className="text-sm text-yellow-300 font-pusab mb-2">{eve.name}</h3>
-              <p className="text-base">Duration : {eve.time}</p>
-              <p className="text-base">{eve.detail}</p>
+              <p className="text-sm sm:text-base">Duration : {eve.time}</p>
+              <p className="text-sm sm:text-base">{eve.detail}</p>
             </div>
           );
         })}

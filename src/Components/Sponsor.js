@@ -1,9 +1,6 @@
 import React from "react";
-// import Carroussel from "./Carroussel";
-// import OracleLogo from "../assets/Images/OracleLogo.png";
 import SponsorCard from "./SponsorCard";
-// import SponsorHead from "../assets/Images/Sponsors.png";
-// import blue_planet from '../assets/Images/blueplanet2.png';
+import fastech from "../assets/Fastechlogo.png";
 import "../Styles/Sponsors.css";
 export default function Sponsor() {
   return (
@@ -31,10 +28,7 @@ export default function Sponsor() {
         />
       </div>
       <div className="flex justify-center gap-10 flex-wrap mt-[100px]">
-        <SponsorCard image="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361348/AlgoUtsav/Images/OracleLogo_mdh5xc.png" title="Company 9"/>
-        <SponsorCard image="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361348/AlgoUtsav/Images/OracleLogo_mdh5xc.png" title="Company 9"/>
-        <SponsorCard image="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361348/AlgoUtsav/Images/OracleLogo_mdh5xc.png" title="Company 9"/>
-        <SponsorCard image="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361348/AlgoUtsav/Images/OracleLogo_mdh5xc.png" title="Company 9"/>
+        <SponsorCard image={fastech} title="Fastech"/>
       </div>
     </div>
   );

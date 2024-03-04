@@ -6,27 +6,35 @@ import uuid4 from 'uuid4';
 export default function Faq() {
   let faqs = [
     {
-      title:"Item 1",
-      content:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title:"What is AlgoUtsav?",
+      content:"It is a ICPC-style event designed to test your abilities and solve a range of competitive programming problems. In addition to the contest, there will be guest lectures, fun events, and giveaways."
     },
     {
-      title:"item 2",
-      content:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title:"What are the dates for AlgoUtsav?",
+      content:"AlgoUtsav will be held on 16th and 17th of march 2024."
     },
     {
-      title:"item 3",
-      content:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title:"Why should I participate in AlgoUtsav?",
+      content:"You will get the opportunity to build a network with like-minded people and have the chance to win prizes and goodies."
     },
     {
-      title:"item 4",
-      content:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title:"How can I register for the contest?",
+      content:"You can register for the contest by clicking on the register button on the website. You will be redirected to the registration page. Fill in the details, and you are good to go."
+    },
+    {
+      title:"What is the participation fee?",
+      content:"The contest is completely free and without monetary charges; it only requires your sharp mind and enthusiasm."
+    },
+    {
+      title:"Who can participate?",
+      content:"It is open to Indian institutions."
     }
   ];
 
   return (
     <div className="pt-2" id="faq">
       <div
-        className="flex justify-center align-middle ml-14 sm:ml-0 w-4/5 sm:w-full my-4 sm:my-8 sm:mt-20 z-30"
+        className="flex justify-center align-middle ml-[11%] sm:ml-0 w-4/5 sm:w-full my-4 sm:my-8 sm:mt-20 z-30"
       >
         <img
           src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361364/AlgoUtsav/Images/questions_jhjqsu.png"

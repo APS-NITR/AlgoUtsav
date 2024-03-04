@@ -12,14 +12,14 @@ function Accordion({key,title, content}) {
         setShow({ ...show, ...value });
       };
   return (
-    <div className="rounded-lg border w-3/4" key={key}>
+    <div className="footer rounded-lg border w-3/4" key={key}>
           <h2 className="accordion-header mb-0">
             <button
               className={`${
                 show.collapse3
                   ? `text-primary [box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:!text-primary-400 dark:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]`
                   : `transition-none rounded-b-[15px]`
-              } group relative flex w-full items-center rounded-t-[15px] border-0 px-5 py-4 text-left text-sm text-yellow-400 font-pusab transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none `}
+              } group relative flex w-full items-center rounded-t-[15px] border-0 px-5 py-4 text-left text-[12px] sm:text-sm text-yellow-400 font-pusab transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none `}
               type="button"
               onClick={() => toggleShow({ ...show, collapse3: !show.collapse3 })}
               aria-expanded="true"

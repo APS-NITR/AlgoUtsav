@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 // import logo from "../assets/Logo.png";
 import Mobnav from "./Mobnav";
 import { FaDownload } from "react-icons/fa";
-import brochure from "../assets/AlgoutstavCollegeBrochure.pdf"
+import brochure from "../assets/Algoutstav Sponsorship Brochure.pdf"
 export default function Header() {
   const [isMenuActive, setActive] = useState(false);
   const [fix,setFix] = useState(false);

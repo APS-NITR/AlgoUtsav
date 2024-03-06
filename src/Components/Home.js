@@ -20,6 +20,7 @@ export default function Home() {
           src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361404/AlgoUtsav/AlGoUTsaV_yg4ftm.png"
           alt="heading"
           style={{  width: "auto", maxHeight: "140px" ,maxWidth:"80%"}}
+          draggable={false}
         />
       </div>
       <a href="https://unstop.com/hackathons/algoutsav-2024-nit-rourkela-905708" target="_blank" rel="noopener noreferrer">
@@ -36,6 +37,7 @@ export default function Home() {
             src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361297/AlgoUtsav/Home%20assets/Union_hsgfhm.png"
             alt="heading"
             style={{ width: "auto", maxWidth:"90%",maxHeight: "140px", position: "relative" }}
+            draggable={false}
           />
           <div
             style={{
@@ -58,11 +60,13 @@ export default function Home() {
            alt='_green_planet'
            src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361310/AlgoUtsav/Home%20assets/Green_Planet_fc92qh.png"
            className="w-1/2 lg:w-[320px]"
+           draggable={false}
         />
         <img 
            alt='_space_shuttle'
            src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361312/AlgoUtsav/Home%20assets/Space_Shuttle_kovwvy.png"
            className="mx-2 w-1/3 hidden sm:block lg:w-[230px]"
+           draggable={false}
          />
       </div>
       

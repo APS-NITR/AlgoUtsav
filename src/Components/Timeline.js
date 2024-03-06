@@ -4,24 +4,44 @@ import React from 'react'
 function Timeline() {
   let event = [
     {
-      name:"Registration Begins",
-      time:"1 Mar 24 to 15 Mar 2024 11:59 PM IST",
-      detail:"Regitration are open at unstop"
+      name:"Registration",
+      time:"1st March 2024 to 15th March 2024",
+      detail:"Registration period for AlgoUtsav at Unstop"
     },
     {
-      name:"Contest 1",
-      time:"16 Mar 24, 02:00 PM to 05:00 PM IST",
-      detail:"contest will comence and begin in unstop"
+      name:"Guest Session of Mr. Vivek Gupta",
+      time:"8th March 2024, 06:30 PM to 07:30 PM IST",
+      detail:"Session on \"Competitive Programming for Internships and Placements\""
     },
     {
-      name:"contest 2",
-      time:"17 Mar 24, 02:00 PM to 05:00 PM IST",
-      detail:"contest will comence and begin in codeforces"
+      name:"Guest Session of Mr. Jaskaran Singh",
+      time:"11th March 2024, 06:30 PM to 07:30 PM IST",
+      detail:"Session on \"Journey to ICPC World Finals\""
     },
     {
-      name:"Guest Lecture",
-      time:"17 mar 24, 06:00 PM to 07:00 PM IST",
-      detail:"Guest lecture will be conducted by xyz"
+      name:"Guest Session of Mr. Pranav Mehta",
+      time:"13th March 2024, 06:30 PM to 07:30 PM IST",
+      detail:"Session on \"Topic Will be Updated\""
+    },
+    {
+      name:"Registration at Codeforces",
+      time:"16th March 2024, 08:00 AM to 01:55 PM IST",
+      detail:"Team registrations start at Codeforces"
+    },
+    {
+      name:"ICPC Style Coding Contest",
+      time:"16th March 2024, 02:00 PM to 05:00 PM IST",
+      detail:"Contest will commence at Codeforces"
+    },
+    {
+      name:"Individual Coding Contest (Only for NIT Rourkela Students)",
+      time:"17th March 2024, 04:00 PM to 06:00 PM IST",
+      detail:"Contest will commence at Codeforces"
+    },
+    {
+      name:"Prize Distribution Ceremony",
+      time:"17th March 2024, 06:30 PM IST",
+      detail:"Prize Distribution and Closing Ceremony"
     }
   ]
   return (
@@ -34,6 +54,7 @@ function Timeline() {
           src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361367/AlgoUtsav/Images/Timeline_weadwb.png"
           alt="_about_us"
           style={{ maxWidth: "70%", maxHeight: "58px" }}
+          draggable={false}
         />
       </div>
       <div className="flex flex-col items-center justify-center mt-8 gap-4">
@@ -52,6 +73,7 @@ function Timeline() {
            alt='_blue_planet'
            src="https://res.cloudinary.com/ddtzbznea/image/upload/v1709361346/AlgoUtsav/Images/blueplanet1_d6ofhd.png"
            className="w-1/2 lg:w-[280PX] "
+           draggable={false}
           />
       </div>
     </div>

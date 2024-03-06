@@ -6,12 +6,8 @@ import uuid4 from 'uuid4';
 export default function Faq() {
   let faqs = [
     {
-      title:"What is AlgoUtsav?",
-      content:"It is a ICPC-style event designed to test your abilities and solve a range of competitive programming problems. In addition to the contest, there will be guest lectures, fun events, and giveaways."
-    },
-    {
       title:"What are the dates for AlgoUtsav?",
-      content:"AlgoUtsav will be held on 16th and 17th of march 2024."
+      content:"AlgoUtsav will be held on 16th and 17th March, 2024."
     },
     {
       title:"Why should I participate in AlgoUtsav?",
@@ -19,15 +15,19 @@ export default function Faq() {
     },
     {
       title:"How can I register for the contest?",
-      content:"You can register for the contest by clicking on the register button on the website. You will be redirected to the registration page. Fill in the details, and you are good to go."
+      content:"You can register for the contest by clicking on the register button on the website. You will be redirected to the Unstop registration page. Fill in the details, and you are good to go."
+    },
+    {
+      title:"What is the mode of the event?",
+      content:"The event is completely online for pan India students, however the event will be offline for NIT Rourkela students."
     },
     {
       title:"What is the participation fee?",
-      content:"The contest is completely free and without monetary charges; it only requires your sharp mind and enthusiasm."
+      content:"The contest is completely free and without monetary charges."
     },
     {
       title:"Who can participate?",
-      content:"It is open to Indian institutions."
+      content:"All School students, engineering students, MBA students, undergraduates, and postgraduates enrolled in any Indian institution are eligible to participate."
     }
   ];
 
